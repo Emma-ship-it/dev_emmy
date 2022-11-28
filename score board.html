@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../../Desktop/bootstrap-5.2.0-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <h1>Software Engineering SCORE</h1>
+    <select id="noise">
+        <option value="BIO 101" id="max">BIO 101</option>
+        <option value="MAT 108" id="max">MAT 108</option>
+        <option value="CHM 105" id="max">CHM 105</option>
+        <option value="GNS 114" id="max">GNS 114</option>
+        <option value="ZLB 112" id="max">ZLB 112</option>
+        <option value="PHS 114" id="max">PHS 114</option>
+        <option value="ZLB 116" id="max">ZLB 116</option>
+        <option value="BIO 109" id="max">BIO 109</option>
+        <option value="ENG 108" id="max">ENG 108</option>
+    </select>
+    <form>
+        <input type="text" placeholder="Credit Hours" id="ch">
+        <input type="text" placeholder="CA1" id="fca">
+        <input type="text" placeholder="CA2" id="sca">
+        <input type="text" placeholder="Exams" id="ex">
+    </form>
+    <button onclick="addCourse()">Add</button>
+    <table class="table table-stripped">
+      <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Course</th>
+            <th scope="col">CA1</th>
+            <th scope="col">CA2</th>
+            <th scope="col">EXAMS</th>
+            <th scope="col">Total</th>
+            <th scope="col">Grade</th>
+            <th scope="col">Credit Hours</th>
+            <th scope="col">Grade Point</th>
+        </tr>
+      </thead>
+      <tbody id="content">
+
+      </tbody>
+      <tfoot>
+         <tr>
+            <th colspan="7" class="text-end"></th>
+            <th id="rave"></th>
+            <th id="val">63867</th>
+
+         </tr>
+      </tfoot>
+    </table>
+    <div id="dark"></div>
+    <script src="./score.js"></script>
+    <script src="../../../../Desktop/bootstrap-5.2.0-dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
